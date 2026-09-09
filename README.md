@@ -15,10 +15,14 @@
 ```bash
 python generate.py              # один раз; сотрёт эталон, если уже заполняли
 python -m kpi.calculator         # output/kpi.csv
-python -m pytest                # оракул; пока эталон пустой — красный
+python -m pytest                # оракул
 python -m kpi.evidence          # гоняет pytest и пишет output/pytest.json
 python -m kpi.report            # output/dashboard.html — открыть в браузере
 ```
+
+Зависимость: `pip install -r requirements.txt`.
+
+CI: `.github/workflows/ci.yml` гоняет тот же pytest. Пока на GitHub не включена защита `main` («require status checks»), это **детектор**, не ворота G7. Ворота: `docs/audit/gates.md`.
 
 ## Как заполнить эталон
 
