@@ -1,15 +1,24 @@
 # Evidence WU-001
 
-Команды с этой машины, 2026-09-09.
+Другой человек может повторить команды ниже. Чат не нужен.
 
-| команда | код | заметка |
-|---|---|---|
-| `python generate.py` | 0 | 15 кликов, 9 конверсий, 9 строк шаблона эталона |
-| `python -m pytest -q` | 1 | **1 failed, 4 passed** — failed: «заполните эталон» |
-| `python -m kpi.calculator` | 0 | `output/kpi.csv`, 9 строк |
-| `python -m kpi.evidence` | 1 | пишет `output/pytest.json` (passed=4, failed=1) |
-| `python -m kpi.report` | 0 | `output/dashboard.html` |
+## Git
 
-SHA калькулятора в отчёте: `9ac231d819b6` (первые 12 символов sha256 `kpi/calculator.py`).
+| | |
+|---|---|
+| Первый коммит с кодом станка | `79198b4aca236ad8fbd15e81e0c266f48a62f257` |
+| Ветка | `main` (это и есть trunk) |
 
-`pytest.ini` задаёт `testpaths = tests`, иначе в оракул попадали тесты `ai-factory-kit/monitoring`.
+Коммит `79198b4` ещё **без** trailer `REQ-001`. Связь требование ↔ коммит появляется в следующем коммите (сообщение с `REQ-001` / `WU-001`).
+
+## Прогоны
+
+Инструменты: Python 3.14, pytest (локально установлен).
+
+| когда | команда | код | заметка |
+|---|---|---|---|
+| Каркас, эталон пустой | `python generate.py` | 0 | 15 кликов, 9 конверсий |
+| то же | `python -m pytest -q` | 1 | 1 failed («заполните эталон»), 4 passed |
+| После того как человек заполнил `expected/kpi.csv` | `python -m pytest -q` | 0 | **5 passed** |
+
+`pytest.ini`: `testpaths = tests` — иначе в сюиту попадали тесты из `ai-factory-kit/monitoring`.
