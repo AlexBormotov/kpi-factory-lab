@@ -17,6 +17,7 @@
 | `kpi.report.write_dashboard` | `kpi/report.py` | Собирает HTML из уже посчитанной таблицы и `output/pytest.json`. |
 | `kpi.evidence.write_pytest_report` | `kpi/evidence.py` | После pytest пишет `output/pytest.json` (счётчики, SHA). Не оракул, только улика. |
 | `tests.test_kpi` | `tests/test_kpi.py` | Оракул: сравнение с `expected/kpi.csv`. |
+| `negative_control` | `scripts/negative_control.py` | G4: временно выключает фильтр ботов, ждёт красный Cost, возвращает файл. Не поверхность правок агента. |
 
 Витрина не является калькулятором. `write_dashboard` только читает файлы.
 

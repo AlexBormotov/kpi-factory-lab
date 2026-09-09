@@ -17,3 +17,6 @@ jobs:
       - name: Oracle
         # Тот же оракул, что локально. Без этой job G7 не из чего собирать.
         run: python -m pytest -q
+      - name: Negative control
+        # Ломает фильтр ботов, ждёт красный Cost, чинит файл. Если Cost остался зелёным — job падает.
+        run: python scripts/negative_control.py
