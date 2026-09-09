@@ -1,0 +1,16 @@
+campaign,day,cost,is_bot
+alpha,2026-09-01,10,false
+alpha,2026-09-01,4,false
+alpha,2026-09-01,3,true
+alpha,2026-09-02,8,false
+alpha,2026-09-02,2,true
+alpha,2026-09-03,6,false
+beta,2026-09-01,5,false
+beta,2026-09-01,1,true
+beta,2026-09-02,7,true
+beta,2026-09-03,9,false
+beta,2026-09-03,3,false
+gamma,2026-09-01,12,true
+gamma,2026-09-02,11,false
+gamma,2026-09-03,2,false
+gamma,2026-09-03,4,false
