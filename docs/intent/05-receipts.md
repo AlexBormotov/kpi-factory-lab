@@ -4,9 +4,9 @@
 
 | Что глава просит | У нас | Статус |
 |---|---|---|
-| Файл требования | `docs/intent/REQ-001.md` | есть |
+| Файл требования | `docs/intent/REQ-001.md`, `REQ-002.md` | есть |
 | Архитектура | `docs/intent/ARCH-001.md`, имена как в коде | есть |
-| Work unit | `docs/intent/WU-001.md`, `WU-002.md`, `WU-003.md` | есть |
+| Work unit | `WU-001` … `WU-004` | есть |
 | Один backlog | канон = `docs/intent/`; `work_plan.md` только заметки | чиним: планер помечен как не-авторитет |
 | Run record | `docs/runs/WU-001/` + SHA `79198b4` | есть |
 | Trailer в git | коммит с `REQ-001` / `WU-001` | этот шаг |
