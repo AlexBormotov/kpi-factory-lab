@@ -5,7 +5,7 @@
 | глава | файл кита | артефакт в этом репо | статус |
 |---|---|---|---|
 | 01 | `01-method.md` | `docs/audit/gates.md` | сделано (WU-004) |
-| 02 + 04 | `02-audit-checklist.md`, `04-readiness-model.md` | `docs/audit/2026-09-10.md` | не начато как единица REQ-002 |
+| 02 + 04 | `02-audit-checklist.md`, `04-readiness-model.md` | `docs/audit/2026-09-10.md` (снимок + добавление SHA) | сделано (WU-005) |
 | 03 | `03-worked-example.md` | `docs/labs/03.md` | не начато |
 | 05 | `05-intent-layer.md` | этот REQ + trailer в git | частично: файлы intent есть, trailer `REQ-002` ещё нет |
 | 06 | `06-judgement-oracle.md` | `docs/labs/06.md` | не начато |
