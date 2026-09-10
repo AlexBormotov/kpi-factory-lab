@@ -8,7 +8,7 @@
 
 Не трогать: `generate.py`, `fixtures/`, `expected/`, `tests/`, `kpi/report.py`, `kpi/evidence.py`.
 
-Термины: [docs/GLOSSARY.md](docs/GLOSSARY.md). Intent: [REQ-001](docs/intent/REQ-001.md), [REQ-002](docs/intent/REQ-002.md). Лаборатория кита: [docs/labs/README.md](docs/labs/README.md).
+Термины: [docs/GLOSSARY.md](docs/GLOSSARY.md). Intent: [REQ-001](docs/intent/REQ-001.md), [REQ-002](docs/intent/REQ-002.md). Лаборатория кита: [docs/labs/README.md](docs/labs/README.md). Договор с агентом: [AGENTS.md](AGENTS.md).
 
 ## Команды
 
