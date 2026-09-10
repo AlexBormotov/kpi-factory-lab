@@ -47,3 +47,12 @@ python -m kpi.report
 - Profit и ROI в эталон не пишут: их считают тесты.
 - Прямой `git push origin main` отвергается. Ветка → PR → зелёный `test`.
 - Unattended landing нет: G2, G5, G9 открыты.
+
+## Second-opinion (Claude CLI)
+
+Это второй читатель, не оракул. Вызов только если человек сказал «отправь в Claude» / «запускай second-opinion».
+
+- Команда: `claude` (см. `.claude/agents/claude-thinking.md`): plan mode, opus, без записи файлов.
+- Не писать `expected/`, `tests/`, `kpi/calculator.py`.
+- Если мнение Claude и pytest расходятся — побеждает pytest, пока человек не сменит эталон.
+
